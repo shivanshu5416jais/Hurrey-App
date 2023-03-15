@@ -1,0 +1,35 @@
+
+<div class="anim container">
+<p><img  alt=""
+    src="assets/images/{{avatar}}.png"> {{name}}</p >   
+    <h1 style="font-family: 'Roboto Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 46px;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.01em;
+    
+    color: #FFFFFF;">Room name</h1>
+    <form [formGroup]="requiredForm" novalidate (submit)="createRoom()">
+<input  [(ngModel)]="roomName"  class="form-control" formControlName="roomName" type="text"  placeholder="-Type here-"  (ngModelChange)="nameChange($event)" />
+<h1 style="font-family: 'Roboto Neue Haas Grotesk Display Pro';
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 46px;
+text-align: center;
+align-items: center;
+letter-spacing: 0.01em;
+
+color: #FFFFFF;">No. of players</h1>
+<input class="form-control"[(ngModel)]="noOfPlayers" formControlName="noOfPlayers"   type="text"  placeholder="-Type here-"  (ngModelChange)="playerChange($event)" (keypress)="changeEvent($event)"/>
+
+<br><br>
+<button type="submit" [disabled]="disabled" >Create</button>
+</form>
+</div>
+<span class="material-symbols-outlined" (click)="goBack()">
+    arrow_back
+    </span>

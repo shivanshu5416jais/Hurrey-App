@@ -1,0 +1,31 @@
+
+<div class="anim container"  >
+
+    <h1>Hello {{name}} !</h1>
+    <p>Choose your avatar</p>
+   
+    <div class="radio-button"> 
+        <input type="radio" [(ngModel)]="avatar" id="avatar1" name="avatar" value="avatar1" (change)="changeAvatar($event)">
+        <label for="avatar1"> <img  alt=""
+            class="cursor-pointer  not_selected" src="assets/images/avatar1.png"></label>
+        <input type="radio" id="avatar2" [(ngModel)]="avatar" name="avatar" value="avatar2" (change)="changeAvatar($event)">
+        <label for="avatar2"> <img  alt=""
+            class="cursor-pointer  not_selected" src="assets/images/avatar2.png"></label>
+        <input type="radio" id="avatar3"  [(ngModel)]="avatar" name="avatar" value="avatar3" (change)="changeAvatar($event)">
+        <label for="avatar3"> <img  alt=""
+            class="cursor-pointer  not_selected" src="assets/images/avatar3.png"></label>
+            <input type="radio" id="avatar4" [(ngModel)]="avatar" name="avatar" value="avatar4" (change)="changeAvatar($event)">
+        <label for="avatar4"> <img  alt=""
+            class="cursor-pointer  not_selected" src="assets/images/avatar4.png"></label>
+        <input type="radio" id="avatar5" [(ngModel)]="avatar" name="avatar" value="avatar5" (change)="changeAvatar($event)">
+        <label for="avatar5"> <img  alt=""
+            class="cursor-pointer  not_selected" src="assets/images/avatar5.png"></label>
+    </div> 
+    <br><br>
+    <button class=" " [disabled]="disabled" (click)="goNext()">Next</button>
+
+</div>
+
+<span class="material-symbols-outlined" (click)="goBack()">
+    arrow_back
+    </span>
