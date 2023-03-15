@@ -10,7 +10,7 @@ export class AuthGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot) {
-      return true
+      // return true
       if (this.router.url === '/') {
         this.router.navigate(['/home']); // Navigate away to some other page
         return false;
