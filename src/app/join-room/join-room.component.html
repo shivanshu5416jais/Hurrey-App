@@ -2,16 +2,7 @@
 <div class="anim container">
 <p><img  alt=""
     src="assets/images/{{avatar}}.png"> {{name}}</p >   
-    <h1 style="font-family: 'Roboto Neue Haas Grotesk Display Pro';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 46px;
-    text-align: center;
-    align-items: center;
-    letter-spacing: 0.01em;
-    
-    color: #FFFFFF;">Type room code below</h1>
+    <h1 >Room name</h1>
 <input [(ngModel)]="roomCode" type="text"  placeholder="-Type here-" class="" (ngModelChange)="valueChange($event)" (keypress)="changeEvent($event)"/>
    
 <br><br>

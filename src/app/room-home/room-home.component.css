@@ -21,13 +21,16 @@ button{
     border-radius: 50em;
     display: block;
     box-sizing: border-box;
-    height: 45px;
+    height: 88px;
     margin: 0 auto;
     border: 2px solid transparent;
     color: #fff;
     min-width: 100px;
+    font-weight: 450;
+font-size: 40px;
+line-height: 46px;
     align-items: center;
-   width:310px;
+   width:560px;
 }
 /* img{
     box-sizing: border-box;  
@@ -39,7 +42,10 @@ button {
 p{
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
 }
 p img{
     
@@ -48,15 +54,53 @@ p img{
     margin-right:5px;
   }
   img{
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     background-image: linear-gradient(#3A3A3A, #3A3A3A), radial-gradient(circle at top left, #f00,#3020ff);
     background-origin: border-box;
     background-clip: content-box, border-box;
     display: inline-block;
-   border: 2px solid;
+   border: 1.45px solid;
     /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
           border-image-source:linear-gradient(to right,#7b72cc,#dc0078,#3871d6)  ;
   }
-  
+  @media only screen and (max-width: 600px) {
+
+    img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-image: linear-gradient(#3A3A3A, #3A3A3A), radial-gradient(circle at top left, #f00,#3020ff);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        display: inline-block;
+       border: 1.45px solid;
+        /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
+              border-image-source:linear-gradient(to right,#7b72cc,#dc0078,#3871d6)  ;
+      }
+      button{
+        background: linear-gradient(#141923,#141923) padding-box,linear-gradient(to right,#7b72cc,#dc0078,#3871d6) border-box;
+        border-radius: 50em;
+        display: block;
+        box-sizing: border-box;
+        height: 45px;
+        margin: 0 auto;
+        border: 2px solid transparent;
+        color: #fff;
+        font-weight: 450;
+font-size: 20px;
+line-height: 23px;
+        min-width: 100px;
+        align-items: center;
+       width:280px;
+    }
+    p{
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+    }
+  }

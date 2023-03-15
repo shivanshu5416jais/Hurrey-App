@@ -1,6 +1,15 @@
 .anim{
     animation: leaves 1.5s   ;
-    
+    box-sizing: border-box;
+
+position: absolute;
+left: 27.86%;
+right: 27.86%;
+top: 32.96%;
+bottom: 32.96%;
+
+background: #000000;
+border-radius: 52.5px;
 }
 @keyframes leaves {
     0% {
@@ -17,8 +26,8 @@ input[type=text]{
     box-sizing: border-box;
 display: block;
 
-height: 45px;
-    width: 300px;
+height: 55px;
+    width: 479px;
     padding-left: 10px;
     border-radius: 10px;
     background: linear-gradient(#141923,#141923) padding-box,linear-gradient(to right,#7b72cc,#dc0078,#3871d6) border-box;
@@ -37,14 +46,88 @@ button{
     border-radius: 50em;
     display: block;
     box-sizing: border-box;
-    height: 45px;
+    height: 55px;
     margin: 0 auto;
     border: 2px solid transparent;
     color: #fff;
-    min-width: 100px;
     align-items: center;
+    font-weight: 450;
+font-size: 20px;
+line-height: 23px;
+    width: 155px;
     padding: 0 3em;
 }
 button {
     cursor: pointer;
 }
+h1{
+    
+font-style: normal;
+font-weight: 450;
+font-size: 40px;
+line-height: 46px;
+text-align: center;
+align-items: center;
+letter-spacing: 0.01em;
+
+color: #FFFFFF;
+}
+@media only screen and (max-width: 600px) {
+    .anim{
+        animation: leaves 1.5s   ;
+        box-sizing: border-box;
+    
+    position: absolute;
+    left: 14.72%;
+right: 14.44%;
+top: 43.12%;
+bottom: 43.08%;
+
+background: #000000;
+border-radius: 15.75px;
+    }
+    h1{
+    
+        font-style: normal;
+        font-weight: 450;
+        font-size: 24px;
+        line-height: 27px;
+        text-align: center;
+        align-items: center;
+        letter-spacing: 0.01em;
+        
+        color: #FFFFFF;
+        }
+        button{
+            background: linear-gradient(#141923,#141923) padding-box,linear-gradient(to right,#7b72cc,#dc0078,#3871d6) border-box;
+            border-radius: 50em;
+            display: block;
+            box-sizing: border-box;
+            height: 35px;
+            width:min-content;
+            margin: 0 auto;
+            border: 2px solid transparent;
+            color: #fff;
+            align-items: center;
+            font-weight: 450;
+font-size: 16px;
+line-height: 18px;
+            padding: 0 3em;
+        }
+        input[type=text]{
+            box-sizing: border-box;
+        display: block;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+letter-spacing: 0.01em;
+        height: 35px;
+            width: 268px;
+            padding-left: 10px;
+            border-radius: 10px;
+            background: linear-gradient(#141923,#141923) padding-box,linear-gradient(to right,#7b72cc,#dc0078,#3871d6) border-box;
+            border: 2px solid transparent;
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity));
+        }
+  }
