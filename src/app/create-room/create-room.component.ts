@@ -66,10 +66,13 @@ createRoom(){
 
 
 changeEvent(event:any){
+  var charCode=(event.which)?event.which:event.keyCode
+  //for pressing enter
+if(charCode==13)
+return true;
   if(this.noOfPlayers)
   return false;
   
-  var charCode=(event.which)?event.which:event.keyCode
  if(charCode>=49 && charCode <=53)
  return true
  return false

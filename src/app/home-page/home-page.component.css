@@ -25,7 +25,10 @@ input[type=text]:focus {
 input[type=text]{
     box-sizing: border-box;
 display: block;
-
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.01em;
 height: 55px;
     width: 479px;
     padding-left: 10px;
@@ -118,8 +121,8 @@ line-height: 18px;
             box-sizing: border-box;
         display: block;
         font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 16px;
+        line-height: 19px;
 letter-spacing: 0.01em;
         height: 35px;
             width: 268px;
