@@ -9,6 +9,7 @@ import { Model } from '../sharedModel';
 })
 export class AvatarSelectionComponent {
   avatar: any;
+  hideBorder: boolean=false;
 
   constructor(private Model:Model, private router:Router){
     this.loader=Model.loader
@@ -21,6 +22,8 @@ export class AvatarSelectionComponent {
     ngOnInit(): void {
       this.avatar=this.Model.avatarSelected
       if(this.avatar)
+      this.hideBorder=true;
+      if(this.avatar)
       this.disabled=false
       this.loader=this.Model.loader
       setTimeout(() => {
@@ -30,7 +33,7 @@ export class AvatarSelectionComponent {
     }
    
     changeAvatar(data:any){
-    
+    this.hideBorder=true
       this.disabled=false
       this.Model.avatarSelected=data['target']['id'];
     }

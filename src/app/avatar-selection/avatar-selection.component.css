@@ -62,7 +62,7 @@ align-items: center;
         border-radius:  50em;
         cursor: pointer;
       }      
-      .radio-button input[type="radio"]:checked+label {
+      .radio-button label[class='dis'] {
        border:1px solid black
        
       }

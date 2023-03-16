@@ -5,20 +5,20 @@
     <p>Choose your avatar</p>
    
     <div class="radio-button"> 
-        <input type="radio" [(ngModel)]="avatar" id="avatar1" name="avatar" value="avatar1" (change)="changeAvatar($event)">
-        <label for="avatar1"> <img  alt=""
+        <input type="radio"  [(ngModel)]="avatar" id="avatar1" name="avatar" value="avatar1" (change)="changeAvatar($event)">
+        <label for="avatar1" [class.dis]="hideBorder && avatar!='avatar1'"> <img  alt=""
             class="cursor-pointer  not_selected" src="assets/images/avatar1.png"></label>
         <input type="radio" id="avatar2" [(ngModel)]="avatar" name="avatar" value="avatar2" (change)="changeAvatar($event)">
-        <label for="avatar2"> <img  alt=""
+        <label for="avatar2" [class.dis]="hideBorder && avatar!='avatar2'"> <img  alt=""
             class="cursor-pointer  not_selected" src="assets/images/avatar2.png"></label>
         <input type="radio" id="avatar3"  [(ngModel)]="avatar" name="avatar" value="avatar3" (change)="changeAvatar($event)">
-        <label for="avatar3"> <img  alt=""
+        <label for="avatar3" [class.dis]="hideBorder && avatar!='avatar3'"> <img  alt=""
             class="cursor-pointer  not_selected" src="assets/images/avatar3.png"></label>
             <input type="radio" id="avatar4" [(ngModel)]="avatar" name="avatar" value="avatar4" (change)="changeAvatar($event)">
-        <label for="avatar4"> <img  alt=""
+        <label for="avatar4" [class.dis]="hideBorder && avatar!='avatar4'"> <img  alt=""
             class="cursor-pointer  not_selected" src="assets/images/avatar4.png"></label>
         <input type="radio" id="avatar5" [(ngModel)]="avatar" name="avatar" value="avatar5" (change)="changeAvatar($event)">
-        <label for="avatar5"> <img  alt=""
+        <label for="avatar5" [class.dis]="hideBorder && avatar!='avatar5'"> <img  alt=""
             class="cursor-pointer  not_selected" src="assets/images/avatar5.png"></label>
     </div> 
     <br><br>
